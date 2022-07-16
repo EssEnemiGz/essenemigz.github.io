@@ -3,9 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>EssEnemiGz</title>
+	<!-- Ícono -->
+	<link rel="icon" href="maxcloud.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Fuente de Joan -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+
 </head>
 <body>
-	<h1>Blog personal de EssEnemiGz</h1>
-	<h3>vPre-Alpha</h3>
+	<header>
+		<a class="logo" href="/"><img src="maxcloud.png" width="100" alt=""></a>
+		<nav id="links">
+			<a class="redirect" href="https://github.com/EssEnemiGz" target="_blank">GitHub</a>
+			<a class="redirect" href="#" target="_blank">Discord</a>
+		</nav>
+	</header>
+	<main>
+		<h1 class="mainText">Blog personal de EssEnemiGz</h1>
+		<h3 class="version">vPre-Alpha</h3>
+		<p class="desc">En este blog se podrán encontrar artículos, proyectos e información publicada por mi.</p>
+	</main>
 </body>
 </html>

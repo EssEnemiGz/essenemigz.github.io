@@ -1,0 +1,35 @@
+body{
+	font-family: 'Joan', serif;
+}
+
+header{
+	display: flex;
+	justify-content: end;
+}
+
+#links{
+	display: inherit;
+}
+
+.redirect{
+	text-decoration: none;
+	border: 2px #428ff5 solid;
+	border-radius: 25px;
+	color: #428ff5;
+	font-size: 20px;
+	margin: 10px;
+	padding: 10px 2em 10px 2em;
+}
+
+.logo{
+	position: absolute;
+	top: -5px;
+	left: 0px;
+}
+
+main{
+	display: grid;
+	justify-content: center;
+	position: relative;
+	top: 25px;
+}
