@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rutas - GithubPages</title>
+	<!-- Icono -->
+	<link rel="icon" href="/maxcloud.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="rutaStyle.css">
+	<link rel="stylesheet" href="/style.css">
+
+	<!-- Fuente de Joan -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<a class="logo" href="/"><img src="/maxcloud.png" width="100" alt=""></a>
+		<nav id="links">
+			<a class="redirect" href="https://github.com/EssEnemiGz" target="_blank">GitHub</a>
+			<a class="redirect" href="https://discord.gg/nvZ8jyq2CA" target="_blank">Discord</a>
+		</nav>
+	</header>
+	<main>
+		<h1 class="mulTitle">Github Pages - Rutas</h1>
+		<div id="container">
+			<p class="sinopsis cuerpo encabezado">En este artículo se enseñará a usar rutas en Github Pages y cómo aprovechar su funcionamiento siendo desarrollador.</p>
+			<p class="cuerpo">Para ponernos en contexto, una ruta sería lo siguiente "essenemigz.github.io/ruta", en este blog se puede apreciar una, la cual es de una carpeta seguida de un archivo; esto se puede extender a repositorios que tengan Github Pages habilitado.</p>
+			<p class="cuerpo">Esto nos puede ser útil para tener una mayor organización en nuestras páginas, o para acceder a contenido estático que ya hayamos alojado en otro repositorio.</p>
+			<h3 class="cuerpo encabezado">Requisitos previos:</h3>
+			<ul>
+				<li class="cuerpo encabezado">Tener un repositorio con Github Pages habilitado.</li>
+				<li class="cuerpo encabezado">Saber lo básico de Github Pages.</li>
+				<li class="cuerpo encabezado">Saber lo básico del arbol de directorio de Unix(opcional).</li>
+			</ul>
+			<h3 class="cuerpo encabezado">Para empezar, esto de las rutas se puede hacer de tres formas distintas:</h3>
+			<ol>
+				<li class="cuerpo encabezado">A base de carpetas y archivos: <p class="cuerpo">Esto significa que las rutas se van a ver así "user.github.io/carpeta/archivo.html"</p></li>
+				<li class="cuerpo encabezado">A base de archivos: <p class="cuerpo">Lo que significa que solo vamos a tener un directorio en nuestro repositorio, donde van a estar todos los archivos; las rutas se ven así "user.github.io"(para el index.html) "user.github.io/archivo2.html" y así con los demás</p></li>
+				<li class="cuerpo encabezado">Conectando con otros repositorios: <p class="cuerpo">Así es, puedes conectar tus repositorios a tu página web si tienes contenido estático alojado ahí, esto es muy útil, haciendo que podamos dividir las páginas a distintos repositorios, haciendo que sean más simples de administrar. El funcionamiento de las rutas sería igual al de las carpetas y archivos, se verían así "user.github.io/repos/carpeta/archivo.html" o "user.github.io/repos/archivo.html"</p></li>
+			</ol>
+
+			<h3 class="cuerpo encabezado">Tenga esto en cuenta cuando aloje su página web; Github Pages muestra la ruta de esta forma cuando hay un archivo "index.html" en la raíz del repositorio: "user.github.io"</h3>
+			<p class="cuerpo">Supongamos que tenemos un repositorio con tres archivos(articles.html, index.html, ports.html) cuando entremos a nuestra web, el archivo que se nos va a mostrar es el index.html. Para enlazar la web con los demás tenemos que agregar el nombre de los otros archivos al dominio. Es decir "user.github.io/articles.html", de esta forma se nos va a mostrar el archivos "articles.html".</p><br>
+			<h3 class="cuerpo encabezado">Funcionamiento de la ruta "/" en los archivos</h3>
+			<p class="cuerpo">Supongamos que queremos usar una imagen que está en el directorio "..", la forma común de acceder a esta es especificando en el documento que esta está en el directo "..", pero esto puede hacer nuestra plantilla poco entendible si la imagen está muy lejos; la solución a esto es aprovecharnos de la ruta "/". La ruta "/" funciona para especificar que estamos en el home de nuestra web, es decir, si la imagen no está en /articles y nosotros estamos en /tutoriales/guia podemos acceder a la imagen con la ruta "/articles/img.png". Así funciona la ruta "/" en nuestra web.</p>
+		</div>
+	</main>
+	<footer id="pie">
+		<h3 class="version">vAlpha</h3>
+	</footer>
+</body>
+</html>
