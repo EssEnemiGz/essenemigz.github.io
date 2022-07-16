@@ -77,7 +77,7 @@ from { width: 0}
 	top: 3em;
 }
 
-ul{
+.list{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr)
 }
