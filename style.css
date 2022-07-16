@@ -29,7 +29,41 @@ header{
 
 main{
 	display: grid;
-	justify-content: center;
+	justify-items: center;
 	position: relative;
 	top: 25px;
+}
+
+.mainText{
+	font-size: 50px;
+	color: #428ff5;
+	margin: 0px;
+}
+
+.desc{
+	font-size: 20px;
+	color: #428ff5;
+}
+
+#optionsContainer{
+	position: relative;
+	top: 3em;
+}
+
+ol{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr)
+}
+
+li{
+	margin: 15px;
+}
+
+footer{
+	position: relative;
+	top: 175px;
+}
+
+.version{
+	color: #428ff5;
 }
