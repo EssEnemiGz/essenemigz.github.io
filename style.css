@@ -21,6 +21,11 @@ header{
 	padding: 10px 2em 10px 2em;
 }
 
+.redirect:hover{
+	color: #fff;
+	background-color: #428ff5;
+}
+
 .logo{
 	position: absolute;
 	top: -5px;
@@ -43,6 +48,23 @@ main{
 .desc{
 	font-size: 20px;
 	color: #428ff5;
+	display: block;
+	font-family: monospace;
+	white-space: nowrap;
+
+	border-right: 4px solid;
+	width: 1020px;
+
+	animation: typing 4s steps(85), blink .5s infinite step-end alternate;
+	overflow:hidden;
+}
+
+@keyFrames typing {
+from { width: 0}
+}
+
+@keyFrames blink {
+ 50% { border-color: transparent}
 }
 
 #optionsContainer{
