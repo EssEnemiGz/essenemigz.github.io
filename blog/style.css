@@ -1,6 +1,6 @@
 body{
 	font-family: 'Joan', serif;
-	background-color: #000;
+	background-color: #101010;
 }
 
 header{
@@ -23,12 +23,12 @@ header{
 }
 
 .redirect:hover{
-	color: #000;
+	color: #fff;
 	background-color: #428ff5;
 }
 
 .redirect:active{
-	color: #000;
+	color: #fff;
 	background-color:  #FF5733;
 	border-color:  #FF5733;
 }
@@ -43,14 +43,7 @@ main{
 	display: grid;
 	justify-items: center;
 	position: relative;
-	top: 80px;
-}
-
-#containerMain{
-	width: 750px;
-	border: 1px #101010 solid;
-	display: grid;
-	justify-items: center;
+	top: 25px;
 }
 
 .mainText{
@@ -59,9 +52,9 @@ main{
 	font-family: monospace;
 	white-space: nowrap;
 	border-right: 2px solid;
-	width: 17ch;
+	width: 27ch;
 
-	animation: typing 2s steps(17), blink .5s infinite step-end alternate;
+	animation: typing 2s steps(27), blink .5s infinite step-end alternate;
 	overflow: hidden;
 	margin: 0;
 }
@@ -78,22 +71,26 @@ from { width: 0}
 	font-size: 22px; 
 	font-weight: 600;
 	color:  #154360;
-	width: 680px;
-	text-align: center;
 }
 
-#accesos{
+#optionsContainer{
+	position: relative;
+	top: 3em;
+}
+
+.list{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr)
 }
 
 li{
+	margin: 15px;
 	list-style-type: none;
 }
 
 footer{
 	position: relative;
-	top: 120px;
+	top: 175px;
 }
 
 .version{
