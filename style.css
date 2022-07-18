@@ -1,6 +1,6 @@
 body{
 	font-family: 'Joan', serif;
-	background-color: #000;
+	background-color: #0d1117;
 }
 
 header{
@@ -23,12 +23,13 @@ header{
 }
 
 .redirect:hover{
-	color: #000;
+	color: #fff;
 	background-color: #428ff5;
+	transition: .3s ease-in-out all;
 }
 
 .redirect:active{
-	color: #000;
+	color: #fff;
 	background-color:  #FF5733;
 	border-color:  #FF5733;
 }
@@ -42,15 +43,12 @@ header{
 main{
 	display: grid;
 	justify-items: center;
-	position: relative;
-	top: 80px;
 }
 
 #containerMain{
-	width: 750px;
-	border: 1px #101010 solid;
 	display: grid;
 	justify-items: center;
+	width: 1200px;
 }
 
 .mainText{
@@ -63,7 +61,8 @@ main{
 
 	animation: typing 2s steps(17), blink .5s infinite step-end alternate;
 	overflow: hidden;
-	margin: 0;
+	margin-top: 1em;
+	margin-bottom: 0;
 }
 
 @keyFrames typing {
@@ -74,26 +73,65 @@ from { width: 0}
  50% { border-color: transparent}
 }
 
-.desc{
-	font-size: 22px; 
-	font-weight: 600;
-	color:  #154360;
-	width: 680px;
-	text-align: center;
+main, #MaxCloudArticle,#containerData,.card{
+	color: aliceblue;
+	background-color: rgba(108, 108, 108, 0.1);
+	border: 1px rgba(108, 108, 108, 0.1) solid;
+	border-radius: 30px;
+	padding: 10px 20px 10px 20px;
+	margin: 20px;
 }
 
-#accesos{
+.card{
+	background-color: rgba(49, 49, 49, 0.1);
+	border: 1px rgba(49, 49, 49, 1) solid;
+	border-radius: 30px;
+}
+
+#containerProjects, #containerLogo{
+	display: flex
+}
+
+#MaxCloudArticle, #containerData{
+	padding: 10px 20px 10px 20px;
+	transition: padding .3s;
+}
+
+#MaxCloudArticle:hover, #containerData:hover{
+	padding: 10px 20px 100px 20px;
+}
+
+#MaxCloudArticle{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	width: 500px;
+	height: 200px;
+	overflow: hidden;
 }
 
-li{
-	list-style-type: none;
+#containerData{
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	width: 500px;
+	height: 200px;
+	color: aliceblue;
 }
 
-footer{
-	position: relative;
-	top: 120px;
+.fa-python{
+	color: #428ff5;
+}
+
+.devName{
+	color: aqua;
+	font-size: 25px;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.techs{
+	margin-top: 10px;
 }
 
 .version{
